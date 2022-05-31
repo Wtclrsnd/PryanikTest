@@ -9,12 +9,12 @@ import Foundation
 
 // MARK: - Sample
 struct Sample: Codable {
-    let data: [Datum]
+    let data: [CellData]
     let view: [String]
 }
 
 // MARK: - Datum
-struct Datum: Codable {
+struct CellData: Codable {
     let name: String
     let data: DataClass
 }

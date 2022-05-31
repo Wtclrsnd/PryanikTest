@@ -15,7 +15,26 @@
 		7243F58B2844E02A00CA7090 /* SampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F58A2844E02A00CA7090 /* SampleModel.swift */; };
 		7243F58D2844ED8A00CA7090 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F58C2844ED8A00CA7090 /* APIManager.swift */; };
 		7243F58F2844EF6D00CA7090 /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F58E2844EF6D00CA7090 /* DataViewModel.swift */; };
+		7243F5932844F86D00CA7090 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7243F5922844F86D00CA7090 /* SnapKit */; };
+		7243F5982844F9F700CA7090 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F5972844F9F700CA7090 /* TextTableViewCell.swift */; };
+		7243F59B2844FB9D00CA7090 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7243F59A2844FB9D00CA7090 /* Kingfisher */; };
+		7243F59D284504F800CA7090 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F59C284504F800CA7090 /* ImageTableViewCell.swift */; };
+		7243F59F28450BBF00CA7090 /* SelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F59E28450BBF00CA7090 /* SelectorTableViewCell.swift */; };
+		7243F5A328466F9A00CA7090 /* InhouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F5A228466F9A00CA7090 /* InhouseModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7243F5A12845239600CA7090 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7243F5732844DF2700CA7090 /* PryanikTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PryanikTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +47,10 @@
 		7243F58A2844E02A00CA7090 /* SampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModel.swift; sourceTree = "<group>"; };
 		7243F58C2844ED8A00CA7090 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		7243F58E2844EF6D00CA7090 /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
+		7243F5972844F9F700CA7090 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
+		7243F59C284504F800CA7090 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		7243F59E28450BBF00CA7090 /* SelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorTableViewCell.swift; sourceTree = "<group>"; };
+		7243F5A228466F9A00CA7090 /* InhouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InhouseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7243F59B2844FB9D00CA7090 /* Kingfisher in Frameworks */,
+				7243F5932844F86D00CA7090 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,12 +98,24 @@
 		7243F5902844EF7200CA7090 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				7243F5962844F9CD00CA7090 /* Cells */,
 				7243F57A2844DF2700CA7090 /* DataViewController.swift */,
 				7243F58E2844EF6D00CA7090 /* DataViewModel.swift */,
 				7243F58A2844E02A00CA7090 /* SampleModel.swift */,
+				7243F5A228466F9A00CA7090 /* InhouseModel.swift */,
 				7243F58C2844ED8A00CA7090 /* APIManager.swift */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		7243F5962844F9CD00CA7090 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7243F5972844F9F700CA7090 /* TextTableViewCell.swift */,
+				7243F59C284504F800CA7090 /* ImageTableViewCell.swift */,
+				7243F59E28450BBF00CA7090 /* SelectorTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,12 +128,17 @@
 				7243F56F2844DF2700CA7090 /* Sources */,
 				7243F5702844DF2700CA7090 /* Frameworks */,
 				7243F5712844DF2700CA7090 /* Resources */,
+				7243F5A12845239600CA7090 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = PryanikTest;
+			packageProductDependencies = (
+				7243F5922844F86D00CA7090 /* SnapKit */,
+				7243F59A2844FB9D00CA7090 /* Kingfisher */,
+			);
 			productName = PryanikTest;
 			productReference = 7243F5732844DF2700CA7090 /* PryanikTest.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +167,10 @@
 				Base,
 			);
 			mainGroup = 7243F56A2844DF2600CA7090;
+			packageReferences = (
+				7243F5912844F86D00CA7090 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7243F5992844FB9D00CA7090 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 7243F5742844DF2700CA7090 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -152,11 +198,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7243F57B2844DF2700CA7090 /* DataViewController.swift in Sources */,
+				7243F5A328466F9A00CA7090 /* InhouseModel.swift in Sources */,
+				7243F59D284504F800CA7090 /* ImageTableViewCell.swift in Sources */,
+				7243F5982844F9F700CA7090 /* TextTableViewCell.swift in Sources */,
 				7243F5772844DF2700CA7090 /* AppDelegate.swift in Sources */,
 				7243F58F2844EF6D00CA7090 /* DataViewModel.swift in Sources */,
 				7243F58D2844ED8A00CA7090 /* APIManager.swift in Sources */,
 				7243F5792844DF2700CA7090 /* SceneDelegate.swift in Sources */,
 				7243F58B2844E02A00CA7090 /* SampleModel.swift in Sources */,
+				7243F59F28450BBF00CA7090 /* SelectorTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +416,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7243F5912844F86D00CA7090 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7243F5992844FB9D00CA7090 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7243F5922844F86D00CA7090 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7243F5912844F86D00CA7090 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		7243F59A2844FB9D00CA7090 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7243F5992844FB9D00CA7090 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7243F56B2844DF2700CA7090 /* Project object */;
 }
