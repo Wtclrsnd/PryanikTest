@@ -20,7 +20,7 @@
 		7243F59B2844FB9D00CA7090 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7243F59A2844FB9D00CA7090 /* Kingfisher */; };
 		7243F59D284504F800CA7090 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F59C284504F800CA7090 /* ImageTableViewCell.swift */; };
 		7243F59F28450BBF00CA7090 /* SelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F59E28450BBF00CA7090 /* SelectorTableViewCell.swift */; };
-		7243F5A328466F9A00CA7090 /* InhouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F5A228466F9A00CA7090 /* InhouseModel.swift */; };
+		7243F5A52846881200CA7090 /* CheckListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F5A42846881200CA7090 /* CheckListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,7 +50,7 @@
 		7243F5972844F9F700CA7090 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		7243F59C284504F800CA7090 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		7243F59E28450BBF00CA7090 /* SelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorTableViewCell.swift; sourceTree = "<group>"; };
-		7243F5A228466F9A00CA7090 /* InhouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InhouseModel.swift; sourceTree = "<group>"; };
+		7243F5A42846881200CA7090 /* CheckListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,6 @@
 				7243F57A2844DF2700CA7090 /* DataViewController.swift */,
 				7243F58E2844EF6D00CA7090 /* DataViewModel.swift */,
 				7243F58A2844E02A00CA7090 /* SampleModel.swift */,
-				7243F5A228466F9A00CA7090 /* InhouseModel.swift */,
 				7243F58C2844ED8A00CA7090 /* APIManager.swift */,
 			);
 			path = Scene;
@@ -114,6 +113,7 @@
 				7243F5972844F9F700CA7090 /* TextTableViewCell.swift */,
 				7243F59C284504F800CA7090 /* ImageTableViewCell.swift */,
 				7243F59E28450BBF00CA7090 /* SelectorTableViewCell.swift */,
+				7243F5A42846881200CA7090 /* CheckListTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -198,12 +198,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7243F57B2844DF2700CA7090 /* DataViewController.swift in Sources */,
-				7243F5A328466F9A00CA7090 /* InhouseModel.swift in Sources */,
 				7243F59D284504F800CA7090 /* ImageTableViewCell.swift in Sources */,
 				7243F5982844F9F700CA7090 /* TextTableViewCell.swift in Sources */,
 				7243F5772844DF2700CA7090 /* AppDelegate.swift in Sources */,
 				7243F58F2844EF6D00CA7090 /* DataViewModel.swift in Sources */,
 				7243F58D2844ED8A00CA7090 /* APIManager.swift in Sources */,
+				7243F5A52846881200CA7090 /* CheckListTableViewCell.swift in Sources */,
 				7243F5792844DF2700CA7090 /* SceneDelegate.swift in Sources */,
 				7243F58B2844E02A00CA7090 /* SampleModel.swift in Sources */,
 				7243F59F28450BBF00CA7090 /* SelectorTableViewCell.swift in Sources */,

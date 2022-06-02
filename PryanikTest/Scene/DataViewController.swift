@@ -36,7 +36,6 @@ final class DataViewController: UIViewController {
 
         viewModel.getData {
             self.tableView.reloadData()
-            print(self.viewModel.modules)
         }
 
         setUpUI()
@@ -79,6 +78,7 @@ extension DataViewController: UITableViewDataSource, UITableViewDelegate {
                 withIdentifier: "selector",
                 for: indexPath
             ) as? SelectorTableViewCell else { return UITableViewCell() }
+            cell.setUp(data: data)
             cell.selectionStyle = .none
             return cell
         case "picture":

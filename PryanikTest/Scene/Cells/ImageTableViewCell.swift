@@ -9,13 +9,12 @@ import UIKit
 import SnapKit
 import Kingfisher
 
-class ImageTableViewCell: UITableViewCell {
+final class ImageTableViewCell: UITableViewCell {
 
     let identifier: String = "img"
 
     private lazy var photoImageView: UIImageView = {
         let imageView = UIImageView()
-
         return imageView
     }()
 
