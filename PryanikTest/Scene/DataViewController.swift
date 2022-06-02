@@ -93,5 +93,13 @@ extension DataViewController: UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alert = UIAlertController(title: viewModel.data?.view[indexPath.row] , message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+            print("User click Approve button")
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 

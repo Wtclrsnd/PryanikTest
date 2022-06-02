@@ -21,6 +21,7 @@
 		7243F59D284504F800CA7090 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F59C284504F800CA7090 /* ImageTableViewCell.swift */; };
 		7243F59F28450BBF00CA7090 /* SelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F59E28450BBF00CA7090 /* SelectorTableViewCell.swift */; };
 		7243F5A52846881200CA7090 /* CheckListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7243F5A42846881200CA7090 /* CheckListTableViewCell.swift */; };
+		727F6CBE2848FC4300ABA025 /* UIApplication+TopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F6CBD2848FC4300ABA025 /* UIApplication+TopVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +52,7 @@
 		7243F59C284504F800CA7090 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		7243F59E28450BBF00CA7090 /* SelectorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorTableViewCell.swift; sourceTree = "<group>"; };
 		7243F5A42846881200CA7090 /* CheckListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListTableViewCell.swift; sourceTree = "<group>"; };
+		727F6CBD2848FC4300ABA025 /* UIApplication+TopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopVC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				7243F5762844DF2700CA7090 /* AppDelegate.swift */,
 				7243F5782844DF2700CA7090 /* SceneDelegate.swift */,
+				727F6CBD2848FC4300ABA025 /* UIApplication+TopVC.swift */,
 				7243F5902844EF7200CA7090 /* Scene */,
 				7243F57F2844DF3200CA7090 /* Assets.xcassets */,
 				7243F5812844DF3200CA7090 /* LaunchScreen.storyboard */,
@@ -202,6 +205,7 @@
 				7243F5982844F9F700CA7090 /* TextTableViewCell.swift in Sources */,
 				7243F5772844DF2700CA7090 /* AppDelegate.swift in Sources */,
 				7243F58F2844EF6D00CA7090 /* DataViewModel.swift in Sources */,
+				727F6CBE2848FC4300ABA025 /* UIApplication+TopVC.swift in Sources */,
 				7243F58D2844ED8A00CA7090 /* APIManager.swift in Sources */,
 				7243F5A52846881200CA7090 /* CheckListTableViewCell.swift in Sources */,
 				7243F5792844DF2700CA7090 /* SceneDelegate.swift in Sources */,

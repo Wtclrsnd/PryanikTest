@@ -16,7 +16,7 @@ final class SelectorTableViewCell: UITableViewCell {
 
     private lazy var tableView: UITableView = {
         var tableView = UITableView()
-        tableView.allowsSelection = false
+//        tableView.allowsSelection = false
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(CheckListTableViewCell.self, forCellReuseIdentifier: "check")
@@ -48,7 +48,6 @@ final class SelectorTableViewCell: UITableViewCell {
     func setUp(data: DataClass?) {
         self.checkList = data
         self.selectedID = checkList?.selectedID
-        print(checkList)
         tableView.reloadData()
     }
 }
@@ -73,4 +72,13 @@ extension SelectorTableViewCell: UITableViewDelegate, UITableViewDataSource {
         }
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let alert = UIAlertController(title: "selector", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+            print("User click Approve button")
+        }))
+        UIApplication.shared.topViewController()?.present(alert, animated: true, completion: nil)
+    }
 }
+
