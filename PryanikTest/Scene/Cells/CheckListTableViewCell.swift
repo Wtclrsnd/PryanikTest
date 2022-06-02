@@ -23,7 +23,7 @@ final class CheckListTableViewCell: UITableViewCell {
         let label = UILabel()
         label.backgroundColor = .clear
         label.numberOfLines = 1
-        label.font = .boldSystemFont(ofSize: 15)
+        label.font = .systemFont(ofSize: 15)
         label.textColor = .black
         label.textAlignment = .left
         label.text = "Placeholder"
@@ -66,6 +66,9 @@ final class CheckListTableViewCell: UITableViewCell {
 
     func setUpCell(text: String, isSelected: Bool) {
         titleLabel.text = text
+        if isSelected {
+            checkPoint.image = UIImage(systemName: "circle.fill")
+        }
     }
 
 }

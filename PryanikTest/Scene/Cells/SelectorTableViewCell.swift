@@ -12,10 +12,11 @@ final class SelectorTableViewCell: UITableViewCell {
     let identifier: String = "selector"
 
     private var checkList: DataClass?
+    internal var selectedID: Int?
 
     private lazy var tableView: UITableView = {
         var tableView = UITableView()
-//        tableView.separatorStyle = .none
+        tableView.allowsSelection = false
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(CheckListTableViewCell.self, forCellReuseIdentifier: "check")
@@ -46,6 +47,8 @@ final class SelectorTableViewCell: UITableViewCell {
 
     func setUp(data: DataClass?) {
         self.checkList = data
+        self.selectedID = checkList?.selectedID
+        print(checkList)
         tableView.reloadData()
     }
 }
@@ -61,7 +64,13 @@ extension SelectorTableViewCell: UITableViewDelegate, UITableViewDataSource {
             for: indexPath
         ) as? CheckListTableViewCell else { return UITableViewCell() }
         let variant = checkList?.variants?[indexPath.row]
-        cell.setUpCell(text: variant?.text ?? "nil", isSelected: false)
+        cell.selectionStyle = .none
+        guard let selectedID = selectedID else { return UITableViewCell() }
+        if indexPath.row == selectedID - 1 {
+            cell.setUpCell(text: variant?.text ?? "nil", isSelected: true)
+        } else {
+            cell.setUpCell(text: variant?.text ?? "nil", isSelected: false)
+        }
         return cell
     }
 }
