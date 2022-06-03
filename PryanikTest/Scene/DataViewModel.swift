@@ -19,6 +19,7 @@ final class DataViewModel {
         APIManager.getData(request: request, completion: { sample in
             DispatchQueue.main.async {
                 self.data = sample
+                print(sample)
                 self.convertData(data: sample)
                 completion()
             }

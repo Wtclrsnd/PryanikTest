@@ -31,6 +31,8 @@ final class DataViewController: UIViewController {
         return tableView
     }()
 
+    private var refreshControl = UIRefreshControl()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,6 +41,7 @@ final class DataViewController: UIViewController {
         }
 
         setUpUI()
+        self.tableView.refreshControl?.endRefreshing()
     }
 
     private func setUpUI() {
@@ -52,6 +55,15 @@ final class DataViewController: UIViewController {
         view.addSubview(tableView)
         tableView.frame = view.bounds
         tableView.backgroundColor = .systemBackground
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+    }
+
+    @objc private func refreshData() {
+        viewModel.getData {
+            self.tableView.reloadData()
+        }
+        self.tableView.refreshControl?.endRefreshing()
     }
 
 }
