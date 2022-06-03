@@ -87,12 +87,8 @@
 		7243F5752844DF2700CA7090 /* PryanikTest */ = {
 			isa = PBXGroup;
 			children = (
-				7243F5762844DF2700CA7090 /* AppDelegate.swift */,
-				7243F5782844DF2700CA7090 /* SceneDelegate.swift */,
-				727F6CBD2848FC4300ABA025 /* UIApplication+TopVC.swift */,
+				72AA239A2849FB67002C240A /* Common */,
 				7243F5902844EF7200CA7090 /* Scene */,
-				7243F57F2844DF3200CA7090 /* Assets.xcassets */,
-				7243F5812844DF3200CA7090 /* LaunchScreen.storyboard */,
 				7243F5842844DF3300CA7090 /* Info.plist */,
 			);
 			path = PryanikTest;
@@ -119,6 +115,18 @@
 				7243F5A42846881200CA7090 /* CheckListTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		72AA239A2849FB67002C240A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7243F5812844DF3200CA7090 /* LaunchScreen.storyboard */,
+				7243F57F2844DF3200CA7090 /* Assets.xcassets */,
+				7243F5782844DF2700CA7090 /* SceneDelegate.swift */,
+				7243F5762844DF2700CA7090 /* AppDelegate.swift */,
+				727F6CBD2848FC4300ABA025 /* UIApplication+TopVC.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
