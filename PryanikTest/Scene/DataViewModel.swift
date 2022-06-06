@@ -13,6 +13,7 @@ final class DataViewModel {
     var modules: [String: DataClass]?
 
     func getData(completion: @escaping () -> Void) {
+        URLCache.shared.removeAllCachedResponses()
         let urlString = "https://pryaniky.com/static/json/sample.json"
         guard let url = URL(string: urlString) else { return }
         let request = URLRequest(url: url)

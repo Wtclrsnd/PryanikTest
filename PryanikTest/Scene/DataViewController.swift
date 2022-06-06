@@ -61,6 +61,7 @@ final class DataViewController: UIViewController {
 
     @objc private func refreshData() {
         viewModel.getData {
+            URLCache.shared.removeAllCachedResponses()
             self.tableView.reloadData()
         }
         self.tableView.refreshControl?.endRefreshing()
