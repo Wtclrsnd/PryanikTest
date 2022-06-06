@@ -28,16 +28,17 @@ final class DataViewModel {
 
     private func convertData(data: Sample) {
         modules = [:]
-        for module in data.data {
+        guard let data = data.data else { return }
+        for module in data {
             switch module.name {
             case "hz":
-                modules?[module.name] = module.data
+                modules?[module.name ?? ""] = module.data
             case "selector":
-                modules?[module.name] = module.data
+                modules?[module.name ?? ""] = module.data
             case "picture":
-                modules?[module.name] = module.data
+                modules?[module.name ?? ""] = module.data
             default:
-                modules?[module.name] = module.data
+                modules?[module.name ?? ""] = module.data
             }
         }
     }

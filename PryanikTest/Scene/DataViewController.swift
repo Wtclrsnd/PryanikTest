@@ -70,11 +70,11 @@ final class DataViewController: UIViewController {
 
 extension DataViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.data?.view.count ?? 0
+        viewModel.data?.view?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let currentModuleKey = viewModel.data?.view[indexPath.row]
+        let currentModuleKey = viewModel.data?.view?[indexPath.row]
         let data = viewModel.modules?[currentModuleKey ?? ""]
         switch currentModuleKey {
         case "hz":
@@ -107,7 +107,7 @@ extension DataViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let alert = UIAlertController(title: viewModel.data?.view[indexPath.row] , message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: viewModel.data?.view?[indexPath.row] , message: nil, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
             print("User click Approve button")
         }))

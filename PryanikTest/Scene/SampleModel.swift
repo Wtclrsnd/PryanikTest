@@ -9,14 +9,14 @@ import Foundation
 
 // MARK: - Sample
 struct Sample: Codable {
-    let data: [CellData]
-    let view: [String]
+    let data: [CellData]?
+    let view: [String]?
 }
 
 // MARK: - Datum
 struct CellData: Codable {
-    let name: String
-    let data: DataClass
+    let name: String?
+    let data: DataClass?
 }
 
 // MARK: - DataClass
@@ -35,6 +35,6 @@ struct DataClass: Codable {
 
 // MARK: - Variant
 struct Variant: Codable {
-    let id: Int
-    let text: String
+    let id: Int?
+    let text: String?
 }
